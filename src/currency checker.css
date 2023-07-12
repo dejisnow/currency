@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --bg-color1:#9fffcb;
+    --bg-color2:#25a18e;
+    --bg-color3:#99edc3;
+   
+}
+
+/* svg files 'wallet' and 'transfer' *
+chck downloads */
+
+body{
+    width: 100%;
+    background-color: var(--bg-color3);
+    
+    
+}
+.main-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows:15% 70% 15%;
+   
+   
+
+   
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+.main{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+
+    border-radius: 30px;
+    
+
+
+   
+  
+
+}
+.container{
+    position: absolute;
+    border: 2px solid #ffff;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50% ,-50%);
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    box-shadow:  10px 10px 10px rgba(0, 0, 0,0.2),
+    10px 0px 10px rgba(0, 0, 0,0.2),
+    10px 0px 10px rgba(0, 0, 0,0.2),
+    10px 0px 10px rgba(0, 0, 0,0.2);
+    background-color: var(--bg-color1);  
+    margin-top: 50px;
+   
+
+  
+}
+input[type='number']{
+    padding: 7px;
+    margin: 0 auto;
+    margin-left: 15px;
+    background-color: #ffff;
+    border: 1px solid rgb(247, 175, 42);
+    border-radius: 5px;
+    
+}
+select {
+    padding: 7px;
+margin-left: 0;
+border-radius: 5px;
+background-color: var(--bg-color2);
+text-align: center;
+color: white;
+}
+
+
+footer{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: var(--bg-color2);
+    width: 100%;
+    height: 40vh;
+}
