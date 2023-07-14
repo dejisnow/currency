@@ -5,7 +5,19 @@
     --bg-color1:#9fffcb;
     --bg-color2:#25a18e;
     --bg-color3:#99edc3;
+    --font-color:#475b5a;
+    --hover-color:#ffd700;
    
+}
+.transferSvg{
+    position: absolute;
+   
+    border: 2px solid #ffff;
+
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50% ,-50%);
 }
 
 /* svg files 'wallet' and 'transfer' *
@@ -21,15 +33,24 @@ body{
     display: grid;
     height: 100vh;
     grid-template-rows:15% 70% 15%;
+    
    
    
 
    
 }
+.svg1{
+    background-color: red;
+}
 h1{
     text-align: center;
     padding: 10px;
-    font-size: 30px;
+    font-size: 40px;
+    color: var(--font-color);
+    text-shadow: 5px -2px 2px #ffff;
+
+    font-weight: 700;
+    z-index: 5;
 }
 .main{
     width: 100%;
@@ -62,6 +83,7 @@ h1{
     10px 0px 10px rgba(0, 0, 0,0.2);
     background-color: var(--bg-color1);  
     margin-top: 50px;
+    z-index: 3;
    
 
   
@@ -76,13 +98,21 @@ input[type='number']{
     
 }
 select {
+    width: 60px;
     padding: 7px;
 margin-left: 0;
 border-radius: 5px;
 background-color: var(--bg-color2);
 text-align: center;
 color: white;
+border: 0;
 }
+/* select:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+    transition: ease 200ms;
+    transform: scale(1.1);
+} */
 
 
 footer{
